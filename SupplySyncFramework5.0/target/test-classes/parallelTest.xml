@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Tests Suite" parallel="tests" thread-count="2">
+    <test name="LoginFunctionality">
+        <classes>
+            <class name="tests.LoginTest"/>
+        </classes>
+    </test>
+    <test name="CreateCompanyFunctionality">
+        <classes>
+            <class name="tests.DeleteTariffTest"/>
+        </classes>
+    </test>
+</suite>
+
